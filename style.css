@@ -58,6 +58,7 @@ body
     color: white;
     background-color: #069106;
     border: none;
+    cursor: pointer;
 }
 .home{
     display: flex;
