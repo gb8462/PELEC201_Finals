@@ -493,11 +493,11 @@ body {
 .combo-card {
     max-width: 48rem;
     margin: 0 auto;
-    background: linear-gradient(to bottom right, var(--emerald-800), var(--emerald-900));
+    background: linear-gradient(to bottom right, rgba(95, 13, 13, 0.63), rgba(90, 6, 6, 0.945));
     border-radius: 1rem;
     padding: 2rem;
     box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
-    border: 2px solid rgba(5, 150, 105, 0.3);
+    border: 2px solid rgba(150, 5, 5, 0.3);
     position: relative;
     overflow: hidden;
 }
@@ -505,7 +505,12 @@ body {
 .combo-pattern {
     position: absolute;
     inset: 0;
-    background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwIDEuNjU3LTEuMzQzIDMtMyAzcy0zLTEuMzQzLTMtMyAxLjM0My0zIDMtMyAzIDEuMzQzIDMgM3oiIGZpbGw9IiNmZmZmZmYiIG9wYWNpdHk9Ii4wNSIvPjwvZz48L3N2Zz4=');
+    background-image: url('assets/promo.jpg');
+    background-repeat: no-repeat;      /* stops tiling */
+    background-size: cover;             /* fills the card */
+    background-position: center;        /* centers the image */
+    border-radius: 1rem;
+    overflow: hidden;
     opacity: 0.5;
 }
 
@@ -529,7 +534,7 @@ body {
 .combo-btn {
     padding: 0.75rem 2rem;
     background: white;
-    color: var(--emerald-800);
+    color: #059245;
     border: none;
     border-radius: 0.5rem;
     font-size: 1rem;
@@ -540,7 +545,7 @@ body {
 }
 
 .combo-btn:hover {
-    background: #d1fae5;
+    background: #d1fadb;
     transform: scale(1.05);
 }
 
