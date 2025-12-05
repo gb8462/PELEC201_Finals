@@ -82,7 +82,7 @@
 
             <div class="products-grid">
                 <!-- Product 1 -->
-                <div class="product-card">
+                <div class="product-card discover-card" data-category="inasal">
                     <div class="product-image">
                         <img src="assets/Pecho-Large-PM2.webp" alt="Chicken Inasal">
                         <div class="product-image-overlay"></div>
@@ -106,7 +106,7 @@
                 </div>
 
                 <!-- Product 2 -->
-                <div class="product-card">
+                <div class="product-card discover-card" data-category="silog">
                     <div class="product-image">
                         <img src="assets/silog/longsilog.png" alt="Silog Meals">
                         <div class="product-image-overlay"></div>
@@ -137,7 +137,7 @@
                 </div>
 
                 <!-- Product 3 -->
-                <div class="product-card">
+                <div class="product-card discover-card" data-category="milktea">
                     <div class="product-image">
                         <img src="assets/Milkteas.jpg" alt="Refreshing Drinks">
                         <div class="product-image-overlay"></div>
@@ -321,8 +321,7 @@
                         </div>
                     </div>
                     <h4 class="contact-title">Call Us</h4>
-                    <p class="contact-detail">(02) 1234-5678</p>
-                    <p class="contact-detail">0917-123-4567</p>
+                    <p class="contact-detail">0909 299 4215</p>
                 </div>
 
                 <div class="contact-card">
@@ -336,8 +335,7 @@
                         </div>
                     </div>
                     <h4 class="contact-title">Email Us</h4>
-                    <p class="contact-detail">hello@teptepinasal.com</p>
-                    <p class="contact-detail">orders@teptepinasal.com</p>
+                    <p class="contact-detail">quimorajohnmichael8@gmail.com</p>
                 </div>
             </div>
 
@@ -358,7 +356,7 @@
                         <p class="map-description">
                             Located in the heart of the city, easy to find and even easier to love
                         </p>
-                        <button class="map-btn">Get Directions</button>
+                        <button class="map-btn" id="directionsBtn">Get Directions</button>
                     </div>
                 </div>
             </div>
@@ -388,9 +386,9 @@
     <div id="productModal" class="modal-overlay">
       <div class="modal">
         <button class="modal-close" id="closeModal">×</button>
-    
+
         <h3 id="modalTitle" class="modal-heading"></h3>
-    
+
         <div class="modal-scroll" id="modalItems"></div>
       </div>
     </div>

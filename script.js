@@ -29,9 +29,10 @@ const closeModal = document.getElementById("closeModal");
 const modalItems = document.getElementById("modalItems");
 const modalTitle = document.getElementById("modalTitle");
 
-document.querySelectorAll(".discover-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const category = btn.dataset.category;
+document.querySelectorAll(".discover-card").forEach(card => {
+  card.addEventListener("click", () => {
+    const category = card.dataset.category;
+
     modalItems.innerHTML = "";
     modalTitle.textContent = category.toUpperCase();
 
@@ -50,6 +51,7 @@ document.querySelectorAll(".discover-btn").forEach(btn => {
     modal.style.display = "flex";
   });
 });
+
 
 closeModal.onclick = () => modal.style.display = "none";
 
@@ -84,4 +86,13 @@ const menuData = {
     { name: "STRAWBERRY MILKTEA P39", img: "assets/milktea/milktea(3).jpg" },
     { name: "TARO MILKTEA P39", img: "assets/milktea/milktea(4).jpg" }
   ]
+};
+
+
+// MAP
+document.getElementById("directionsBtn").onclick = () => {
+  window.open(
+    "https://www.google.com/maps/search/?api=1&query=WJVH+PFR,Old+Manila+S+Rd,Lucena+City,Quezon",
+    "_blank"
+  );
 };
