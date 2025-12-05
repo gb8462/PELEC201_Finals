@@ -98,7 +98,7 @@
                     <div class="product-content">
                         <h3 class="product-title">Chicken Inasal</h3>
                         <p class="product-description">Marinated in our secret blend of spices, grilled over hot coals for that signature smoky flavor and golden char</p>
-                        <div class="product-link">
+                        <div class="product-link discover-btn" data-category="inasal">
                             <span>Discover more</span>
                             <span class="arrow">→</span>
                         </div>
@@ -129,7 +129,7 @@
                     <div class="product-content">
                         <h3 class="product-title">Silog Meals</h3>
                         <p class="product-description">Hearty breakfast combos featuring garlic fried rice, perfectly cooked eggs, and your choice of savory grilled meats</p>
-                        <div class="product-link">
+                        <div class="product-link discover-btn" data-category="silog">
                             <span>Discover more</span>
                             <span class="arrow">→</span>
                         </div>
@@ -156,7 +156,7 @@
                     <div class="product-content">
                         <h3 class="product-title">Refreshing Drinks</h3>
                         <p class="product-description">Cool down with our selection of fresh fruit juices, iced teas, and traditional Filipino beverages</p>
-                        <div class="product-link">
+                        <div class="product-link discover-btn" data-category="milktea">
                             <span>Discover more</span>
                             <span class="arrow">→</span>
                         </div>
@@ -384,6 +384,16 @@
         </div>
     </section>
 
+    <!-- Product Modal -->
+    <div id="productModal" class="modal-overlay">
+      <div class="modal">
+        <button class="modal-close" id="closeModal">×</button>
+    
+        <h3 id="modalTitle" class="modal-heading"></h3>
+    
+        <div class="modal-scroll" id="modalItems"></div>
+      </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

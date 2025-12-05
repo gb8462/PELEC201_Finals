@@ -960,3 +960,127 @@ body {
         font-size: 0.875rem;
     }
 }
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.85);
+    backdrop-filter: blur(6px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 1rem;
+}
+
+/* Modal Box */
+.modal {
+    background: white;
+    border-radius: 1rem;
+    max-width: 700px;
+    width: 100%;
+    max-height: 90vh;
+    padding: 1.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: pop 0.3s ease;
+}
+
+@keyframes pop {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Modal Header */
+.modal-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+/* Scrollable Grid */
+.modal-scroll {
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    padding-right: 0.5rem;
+}
+
+/* Optional beautiful scrollbar */
+.modal-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(16, 185, 129, 0.5);
+    border-radius: 10px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Individual Item Card */
+.modal-item {
+    margin-top: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    text-align: center;
+    background: #f9fafb;
+
+    /* green borders + lift effect */
+    border: 2px solid rgba(16, 185, 129, 0.25);
+    box-shadow: 0 8px 22px rgba(16, 185, 129, 0.12);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+}
+
+/* Hover effect */
+.modal-item:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(16, 185, 129, 0.35);
+    border: 2px solid rgba(16, 185, 129, 0.7);
+}
+
+/* Item Image */
+.modal-item img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    object-position: center;
+    background: #ecfdf5;
+    display: block;
+
+    border-top-left-radius: 0.65rem;
+    border-top-right-radius: 0.65rem;
+}
+
+/* Item Label */
+.modal-item p {
+    padding: 0.6rem;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #065f46;
+    background: #ecfdf5;
+    border-top: 1px solid rgba(16, 185, 129, 0.25);
+    margin-top: auto;
+}
+
+/* Close Button */
+.modal-close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--slate-600);
+}
