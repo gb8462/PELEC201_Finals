@@ -3,34 +3,387 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TepTep</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Teptep Inasal - Authentic Filipino Grilled Favorites</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar made by nanz -->
-    <div class="navbar">
-        <img src="assets/LOGO.jpg" alt="Chicken Head" class="logo">
-        <div class="menu">
-            <div>Home</div>
-            <div>About</div>
-            <div>Menu</div>
-            <div>Contact</div>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-brand">
+                    <div class="logo-container">
+                        <div class="logo-glow"></div>
+                        <div class="logo">
+                            <svg class="flame-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="brand-name">Teptep Inasal</span>
+                </div>
+                
+                <div class="nav-links">
+                    <button onclick="scrollToSection('hero')" class="nav-link">Home</button>
+                    <button onclick="scrollToSection('products')" class="nav-link">Menu</button>
+                    <button onclick="scrollToSection('about')" class="nav-link">About</button>
+                    <button onclick="scrollToSection('contact')" class="nav-btn">Visit Us</button>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div class="home">
-        <div class="disc">
-            <h1 id="headingHome">SAVOR THE ART OF <b style="color: red;">TASTE.</b></h1>
-            <p id="paraHome">Welcome to Tep-Tep Inasal.Home of flavorful grilled chicken and busog-sulit meals
-                that hit the spot. From the first sizzle to the last scoop of unli rice, every bite is made to satisfy your cravings and make you feel at home. </p>
-            <button class="buttonHome">Order Now</button>
-        </div>
-            <img src="assets/Pecho-Large-PM2.webp" style="width: 500px;">
-    </div>
+    </nav>
 
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwY2hpY2tlbiUyMGZpbGlwaW5vfGVufDF8fHx8MTc2NDkyODEzMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Grilled Chicken Inasal">
+            <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-inner">
+                <div class="hero-badge">
+                    <span>Authentic Filipino Grilled Favorites</span>
+                </div>
+                
+                <h1 class="hero-title">Flame-Kissed Perfection</h1>
+                
+                <p class="hero-description">
+                    Experience the rich, smoky flavors of traditional chicken inasal and hearty silog meals, 
+                    grilled to perfection and served with love
+                </p>
+
+                <div class="hero-buttons">
+                    <button onclick="scrollToSection('products')" class="btn-primary">Explore Our Menu</button>
+                    <button onclick="scrollToSection('contact')" class="btn-secondary">Find Us</button>
+                </div>
+            </div>
+
+            <button onclick="scrollToSection('products')" class="scroll-indicator" aria-label="Scroll to products">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Our Specialties</span>
+                </div>
+                <h2 class="section-title">What We Serve</h2>
+                <p class="section-description">
+                    Every dish is prepared with care, using traditional methods and the finest ingredients
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1718421670841-19501b4a9e03?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmlsbGVkJTIwY2hpY2tlbiUyMGZpbGlwaW5vfGVufDF8fHx8MTc2NDkyODEzMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Chicken Inasal">
+                        <div class="product-image-overlay"></div>
+                        <div class="product-icon emerald">
+                            <div class="icon-glow"></div>
+                            <div class="icon-container">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Chicken Inasal</h3>
+                        <p class="product-description">Marinated in our secret blend of spices, grilled over hot coals for that signature smoky flavor and golden char</p>
+                        <div class="product-link">
+                            <span>Discover more</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1642208238991-d13e9f25d4b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWxpcGlubyUyMGJyZWFrZmFzdCUyMHNpbG9nfGVufDF8fHx8MTc2NDkyODEzMXww&ixlib=rb-4.1.0&q=80&w=1080" alt="Silog Meals">
+                        <div class="product-image-overlay"></div>
+                        <div class="product-icon amber">
+                            <div class="icon-glow"></div>
+                            <div class="icon-container">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M17 18a5 5 0 0 0-10 0"></path>
+                                    <line x1="12" y1="2" x2="12" y2="9"></line>
+                                    <line x1="4.22" y1="10.22" x2="5.64" y2="11.64"></line>
+                                    <line x1="1" y1="18" x2="3" y2="18"></line>
+                                    <line x1="21" y1="18" x2="23" y2="18"></line>
+                                    <line x1="18.36" y1="11.64" x2="19.78" y2="10.22"></line>
+                                    <line x1="23" y1="22" x2="1" y2="22"></line>
+                                    <polyline points="8 6 12 2 16 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Silog Meals</h3>
+                        <p class="product-description">Hearty breakfast combos featuring garlic fried rice, perfectly cooked eggs, and your choice of savory grilled meats</p>
+                        <div class="product-link">
+                            <span>Discover more</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1664993119473-013502f1e3f8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cm9waWNhbCUyMGRyaW5rcyUyMGJldmVyYWdlc3xlbnwxfHx8fDE3NjQ5MjgxMzJ8MA&ixlib=rb-4.1.0&q=80&w=1080" alt="Refreshing Drinks">
+                        <div class="product-image-overlay"></div>
+                        <div class="product-icon teal">
+                            <div class="icon-glow"></div>
+                            <div class="icon-container">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 2v6.5C9 10.43 7.43 12 5.5 12S2 10.43 2 8.5V2"></path>
+                                    <path d="M22 2v6.5c0 1.93-1.57 3.5-3.5 3.5S15 10.43 15 8.5V2"></path>
+                                    <path d="M9 12c0 5.52-1.343 10-3 10s-3-4.48-3-10"></path>
+                                    <path d="M22 12c0 5.52-1.343 10-3 10s-3-4.48-3-10"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Refreshing Drinks</h3>
+                        <p class="product-description">Cool down with our selection of fresh fruit juices, iced teas, and traditional Filipino beverages</p>
+                        <div class="product-link">
+                            <span>Discover more</span>
+                            <span class="arrow">→</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="combo-section">
+                <div class="combo-card">
+                    <div class="combo-pattern"></div>
+                    <div class="combo-content">
+                        <h3 class="combo-title">Special Combo Meals Available</h3>
+                        <p class="combo-description">
+                            Try our value combo meals that pair our signature chicken inasal with silog favorites and refreshing drinks
+                        </p>
+                        <button onclick="scrollToSection('contact')" class="combo-btn">Visit Us Today</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1657593088889-5105c637f2a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXN0YXVyYW50JTIwaW50ZXJpb3IlMjBkaW5pbmd8ZW58MXx8fHwxNzY0ODYwNjA1fDA&ixlib=rb-4.1.0&q=80&w=1080" alt="Restaurant Interior">
+                        <div class="about-image-overlay"></div>
+                    </div>
+                    <div class="about-decor-1"></div>
+                    <div class="about-decor-2"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="section-badge">
+                        <span>Our Story</span>
+                    </div>
+                    
+                    <h2 class="section-title">Tradition Meets Flavor</h2>
+                    
+                    <p class="about-text">
+                        At Teptep Inasal, we bring the authentic taste of Filipino grilling to your table. 
+                        Our journey began with a simple mission: to share the beloved flavors of traditional 
+                        chicken inasal and classic silog meals with our community.
+                    </p>
+                    
+                    <p class="about-text">
+                        Each piece of chicken is marinated for hours in our signature blend of calamansi, 
+                        lemongrass, and spices, then grilled over hot coals to achieve that perfect char 
+                        and smoky aroma. Our silog meals honor the Filipino breakfast tradition, served 
+                        all day for whenever hunger strikes.
+                    </p>
+
+                    <div class="values-list">
+                        <div class="value-item">
+                            <div class="value-icon rose">
+                                <div class="value-icon-glow"></div>
+                                <div class="value-icon-container">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="value-text">
+                                <h4 class="value-title">Made with Passion</h4>
+                                <p class="value-description">Every dish is prepared with love and dedication to authentic Filipino flavors</p>
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon emerald">
+                                <div class="value-icon-glow"></div>
+                                <div class="value-icon-container">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="value-text">
+                                <h4 class="value-title">Community Focused</h4>
+                                <p class="value-description">We bring people together through great food and warm hospitality</p>
+                            </div>
+                        </div>
+
+                        <div class="value-item">
+                            <div class="value-icon amber">
+                                <div class="value-icon-glow"></div>
+                                <div class="value-icon-container">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="12" cy="8" r="7"></circle>
+                                        <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="value-text">
+                                <h4 class="value-title">Quality Ingredients</h4>
+                                <p class="value-description">Only the freshest, highest quality ingredients make it to your plate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Get In Touch</span>
+                </div>
+                <h2 class="section-title">Visit Us Today</h2>
+                <p class="section-description">
+                    We would love to serve you. Come visit us or get in touch with any questions
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon emerald">
+                        <div class="contact-icon-glow"></div>
+                        <div class="contact-icon-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="contact-title">Visit Us</h4>
+                    <p class="contact-detail">123 Mabini Street</p>
+                    <p class="contact-detail">Barangay Santos, Metro Manila</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon teal">
+                        <div class="contact-icon-glow"></div>
+                        <div class="contact-icon-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="contact-title">Open Hours</h4>
+                    <p class="contact-detail">Mon - Sun: 7:00 AM - 10:00 PM</p>
+                    <p class="contact-detail">Open Daily</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon emerald">
+                        <div class="contact-icon-glow"></div>
+                        <div class="contact-icon-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="contact-title">Call Us</h4>
+                    <p class="contact-detail">(02) 1234-5678</p>
+                    <p class="contact-detail">0917-123-4567</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon teal">
+                        <div class="contact-icon-glow"></div>
+                        <div class="contact-icon-container">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+                    <h4 class="contact-title">Email Us</h4>
+                    <p class="contact-detail">hello@teptepinasal.com</p>
+                    <p class="contact-detail">orders@teptepinasal.com</p>
+                </div>
+            </div>
+
+            <div class="map-section">
+                <div class="map-card">
+                    <div class="map-pattern"></div>
+                    <div class="map-content">
+                        <div class="map-icon-wrapper">
+                            <div class="map-icon-glow"></div>
+                            <div class="map-icon">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="map-title">Find Us Here</h3>
+                        <p class="map-description">
+                            Located in the heart of the city, easy to find and even easier to love
+                        </p>
+                        <button class="map-btn">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="footer-logo-container">
+                            <div class="footer-logo-glow"></div>
+                            <div class="footer-logo">
+                                <svg class="flame-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="footer-brand-name">Teptep Inasal</span>
+                    </div>
+                    <p class="footer-text">
+                        &copy; <span id="currentYear"></span> Teptep Inasal. Bringing authentic Filipino flavors to your table.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
